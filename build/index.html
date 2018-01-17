@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main-style.min.css">
+    <title>Карточка клиента - Личные данные</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="profile-layout">
+        <header class="header" id="header">
+          <div class="wrap_logo_burger">
+            <div class="burger">
+              <div class="burger_line"></div>
+              <div class="burger_line"></div>
+              <div class="burger_line"></div>
+            </div>
+            <div class="logo"><img class="logo_picture" src="images/logo.png" alt="logo"></div>
+            <div class="logo_text">Система управления<br>агенством недвижимости</div>
+          </div>
+          <div class="inform">
+            <div class="item currency"><i class="fa fa-usd" aria-hidden="true"></i><span>курс доллара: 26.3 / 28.9</span></div>
+            <div class="item location"><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#">Днепропетровск</a></div>
+            <div class="item alarm"><i class="fa fa-bell-o" aria-hidden="true"></i><span>+5 / 20</span></div>
+            <div class="item shopping_basket"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>+2</span></div>
+            <div class="item profile"><img src="images/profile.png" alt="profile"><a href="#">Брюс Виллис</a></div>
+          </div><a class="arrow" href="#"><i class="fa fa-arrow-circle-right">   </i></a>
+        </header>
+        <div class="title">
+          <p>Карточка клиента</p>
+        </div>
+        <div class="content">
+          <aside class="aside">
+            <div class="aside_info aside_section">
+              <div class="photo">
+                <div class="main_photo"><img src="images/photo_profile.png" alt=""><a>
+                    <div class="download"><img src="images/download.svg" alt=""></div></a></div>
+              </div>
+              <div class="name">  Брюс Виллис</div>
+              <div class="id_number">Ваш ID: 1099</div>
+              <div class="progress-bar">75%</div>
+            </div>
+            <div class="aside_contacts aside_section">
+              <div class="email"><i class="fa fa-envelope" aria-hidden="true"></i><span>Email: </span><a href="mailto:jevo@gmail.com">jevo@gmail.com</a></div>
+              <div class="tel"><i class="fa fa-phone" aria-hidden="true"></i><span>Тел.: </span><a href="tel:+380999659909">+380 99 965-99-09</a>
+                <div class="social_icons"><a href="viber://chat?number=380999659908"><img src="images/viber.svg" title="Viber" alt="Viber"></a><a href="tg://resolve?domain=jevo"><img src="images/telegram.svg" title="Telegram" alt="Telegram"></a><a class="whatsapp" href="whatsapp://send?phone=+120345678910"><img src="images/whatsapp.svg" title="WhatsApp" alt="WhatsApp"></a></div>
+              </div>
+              <!--.skype
+              //i.fa.fa-skype(aria-hidden='true')
+              //span Skype 
+                  //a(href="skype: belkin.frontend@gmail.com") //belkin.frontend
+              -->
+              <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Адрес: Украина, Киев</span></div>
+            </div>
+            <div class="aside_related_contacts aside_section">
+              <div class="all_referal"><i class="fa fa-users" aria-hidden="true"></i><span>Рефералов: 29 <a href="#">просмотреть всех</a></span><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="aside_balans aside_section">
+              <div class="your_bonus flex_data"><i class="fa fa-gift" aria-hidden="true"></i><span>Ваш бонус: «Любой тарифный пакет бесплатен в течении : 1 месяц»</span></div>
+            </div>
+            <div class="aside_last_entrance aside_section flex_data"><i class="fa fa-info-circle" aria-hidden="true"></i><span>Последний вход: 11:25 вчера.</span><span>IP: 13.134.11.20</span></div>
+          </aside>
+          <main class="main">
+            <div class="nav_main">
+              <div class="nav_links"><a class="nav_main_active" href="#">Личные данные</a><a href="#">Заявки от клиента</a></div>
+            </div>
+            <section class="general">
+              <article class="article_left">
+                <label for="field1">Фамилия</label>
+                <input id="field1" type="text">
+                <label for="field2">Имя</label>
+                <input type="text">
+                <label for="field4">Дата рождения</label>
+                <div class="field_birthday">
+                  <div class="birthday">
+                    <select class="day" id="field4">
+                      <option value="1">1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
+                      <option>16</option>
+                      <option>17</option>
+                      <option>18</option>
+                      <option>19</option>
+                      <option>20</option>
+                      <option>21</option>
+                      <option>22</option>
+                      <option>23</option>
+                      <option>24</option>
+                      <option>25</option>
+                      <option>26</option>
+                      <option>27</option>
+                      <option>28</option>
+                      <option>29</option>
+                      <option>30</option>
+                      <option>31</option>
+                    </select><span>день</span>
+                  </div>
+                  <div class="birthday">
+                    <select>
+                      <option>Январь</option>
+                      <option>Февраль</option>
+                      <option>Март</option>
+                      <option>Апрель</option>
+                      <option>Май</option>
+                      <option>Июнь</option>
+                      <option>Июль</option>
+                      <option>Август</option>
+                      <option>Сентябрь</option>
+                      <option>Октябрь</option>
+                      <option>Ноябрь</option>
+                      <option>Декабрь</option>
+                    </select><span>месяц</span>
+                  </div>
+                  <div class="birthday"> 
+                    <select class="year">
+                      <option>1978</option>
+                      <option>1979</option>
+                      <option>1980</option>
+                    </select><span>год</span>
+                  </div>
+                </div>
+                <label for="field5"> Email</label>
+                <input id="field5" type="email">
+                <label for="field2">Связанные контакты</label>
+                <div class="linked_contacts">
+                  <input id="field2" type="text" placeholder="проверить  телефон"><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                </div>
+                <div class="contacts_names"><span>Моисей Дудаев</span><span>Наталья Орейро</span></div><a class="button_save" href="#">Сохранить<img src="images/angle.svg" title="" alt=""></a>
+              </article>
+              <article class="article_right">
+                <label for="field8">Телефон</label>
+                <input class="country_code" type="tel" placeholder="+380">
+                <input class="operator_code" id="field8" type="tel">
+                <input class="phone_number" type="tel">
+                <input class="confirm_code" type="tel"><span class="social_icons"><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a><a href="viber://chat?number=380999659908"><img src="images/viber.svg" title="Viber" alt="Viber"></a><a href="tg://resolve?domain=jevo"><img src="images/telegram.svg" title="Telegram" alt="Telegram"></a><a class="whatsapp" href="whatsapp://send?phone=+120345678910"><img src="images/whatsapp.svg" title="WhatsApp" alt="WhatsApp"></a></span>
+                <label for="field8"></label>
+                <input class="country_code" type="tel" placeholder="+380">
+                <input class="operator_code" id="field8" type="tel">
+                <input class="phone_number" type="tel">
+                <input class="confirm_code" type="tel"><span class="social_icons"><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a><a href="viber://chat?number=380999659908"><img src="images/viber.svg" title="Viber" alt="Viber"></a><a href="tg://resolve?domain=jevo"><img src="images/telegram.svg" title="Telegram" alt="Telegram"></a><a class="whatsapp" href="whatsapp://send?phone=+120345678910"><img src="images/whatsapp.svg" title="WhatsApp" alt="WhatsApp"></a></span>
+                <div class="menu1"><br id="tab2"><a class="active_tab" href="#tab1">Комментарий аккаунта (+6)</a><a href="#tab2">Комментарий сообщества (+4)</a>
+                  <div class="inside">
+                    <div>A while back, we made a post about people who were perusing art galleries and museums and spontaneously stumbled upon their doppelganger, in fine art form. Perhaps inspired by this, Google have decided to add a feature to their Arts & Culture app that uses facial recognition technology to match your selfie with a famous portrait. The portraits are pulled from a database of celebrated works collected from over 1000 museums worldwide, so the chances of a half-decent match should be fairly high, shouldn’t they? Well now the results are in, and it’s fair to say that they are mixed, at best. This seems to part of the appeal however, as people have begun posting their hilarious (mis)matches online and they are proving to be wildly popular. You can see why! Sadly, the feature isn’t yet available outside of the U.S. so if you’re not stateside and would like to give it a try, you’ll have to be a little patient. In the meantime however, you can scroll down below and check out what others have been compared with. Don’t forget to vote for your favourite</div>
+                    <div>вкладка 2</div>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </main>
+        </div>
+        <footer class="footer">
+          <div class="footer_wrap">
+            <div class="copyright">
+              <p>2016-2017 &copy; Agent24. АН &laquo;22 Столетие&raquo;. Все права защищены.</p>
+              <p class="footer_email">email: <a href="mailto:info@agent24.ua">info@agent24.ua</a></p>
+            </div>
+            <ul class="links">
+              <li><a href="#">Политика безопасности</a></li>
+              <li><a href="#">Правила</a></li>
+              <li><a href="#">Вопросы и ответы</a></li>
+              <li><a href="#">Техническая поддержка</a></li>
+              <li class="visa"><a href="#"><img src="images/visa.svg" alt="Visa"></a></li>
+              <li class="liqpay"><a href="#"><img src="images/liqpay.svg" alt="Visa"></a></li>
+            </ul>
+          </div><a class="angle_up" href="#header"><img src="images/angle.svg" alt=""></a>
+        </footer>
+      </div>
+      <script src="js/main.min.js"></script>
+    </div>
+  </body>
+</html>

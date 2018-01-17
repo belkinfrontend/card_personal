@@ -2,9 +2,7 @@ main.main
     .nav_main
         .nav_links
             a(href="#").nav_main_active Личные данные
-            a(href="#") Мои сервисы
-            a(href="#") Мой статус
-        span Ваш ID: 1099
+            a(href="#") Заявки от клиента
         
     section.general
         article.article_left
@@ -12,10 +10,7 @@ main.main
             input#field1(type='text')
             
             label(for='field2') Имя
-            input#field2(type='text')
-            
-            label(for='field3') Отчество
-            input#field3(type='text')
+            input(type='text')
             
             label(for='field4') Дата рождения
             .field_birthday
@@ -80,13 +75,19 @@ main.main
             
             label(for='field5')  Email
             input#field5(type='email')
+            
+            label(for='field2') Связанные контакты
+            .linked_contacts
+                input#field2(type='text' placeholder="проверить  телефон")
+                a(href="#"): i.fa.fa-plus-circle(aria-hidden='true')
+            .contacts_names
+                span Моисей Дудаев
+                span Наталья Орейро
+            
+            a.button_save(href="#") Сохранить
+                img(src="images/angle.svg" title="" alt="")
 
         article.article_right
-            label(for='field6') Область
-            input#field6(type='text' placeholder="Введите название области")
-            
-            label(for='field7') Населённый пункт
-            input#field7(type='text' placeholder="Введите название населённого пункта")
             
             label(for='field8') Телефон
             input.country_code(type="tel" placeholder="+380")
@@ -102,40 +103,32 @@ main.main
                     img(src="images/telegram.svg" title="Telegram" alt="Telegram")
                 a(href="whatsapp://send?phone=+120345678910").whatsapp
                     img(src="images/whatsapp.svg" title="WhatsApp" alt="WhatsApp")
-            
-            label(for='field9') Изменить пароль
-            input#field9(type='password' placeholder="Ваш старый пароль")
-            .new_password
-                input(type='password' placeholder="Введите новый пароль")
+                    
+            label(for='field8')
+            input.country_code(type="tel" placeholder="+380")
+            input#field8.operator_code(type='tel')
+            input.phone_number(type='tel')
+            input.confirm_code(type='tel')
+            span.social_icons
                 a(href="#"): i.fa.fa-info-circle(aria-hidden='true')
-            input(type='password' placeholder="Повторите пароль")
+                a(href="#"): i.fa.fa-plus-circle(aria-hidden='true')
+                a(href="viber://chat?number=380999659908")
+                    img(src="images/viber.svg" title="Viber" alt="Viber")
+                a(href="tg://resolve?domain=jevo" )
+                    img(src="images/telegram.svg" title="Telegram" alt="Telegram")
+                a(href="whatsapp://send?phone=+120345678910").whatsapp
+                    img(src="images/whatsapp.svg" title="WhatsApp" alt="WhatsApp")
             
-            a.button_save(href="#") Сохранить
-                img(src="images/angle.svg" title="" alt="")
+            
+            .menu1
+              br#tab2
+              a.active_tab(href='#tab1') Комментарий аккаунта (+6)
+              a(href='#tab2') Комментарий сообщества (+4)
+              .inside
+                div A while back, we made a post about people who were perusing art galleries and museums and spontaneously stumbled upon their doppelganger, in fine art form. Perhaps inspired by this, Google have decided to add a feature to their Arts & Culture app that uses facial recognition technology to match your selfie with a famous portrait. The portraits are pulled from a database of celebrated works collected from over 1000 museums worldwide, so the chances of a half-decent match should be fairly high, shouldn’t they? Well now the results are in, and it’s fair to say that they are mixed, at best. This seems to part of the appeal however, as people have begun posting their hilarious (mis)matches online and they are proving to be wildly popular. You can see why! Sadly, the feature isn’t yet available outside of the U.S. so if you’re not stateside and would like to give it a try, you’ll have to be a little patient. In the meantime however, you can scroll down below and check out what others have been compared with. Don’t forget to vote for your favourite
+                div вкладка 2
+            
+            
+            
         
-    section.tarif
-        .tarif_item1.item
-            p Тарифный пакет: 
-                a(href="#") Выбрать пакет
-            button(type='submit') Поменять тариф
-        .tarif_item2.item
-            p Ваш баланс:
-            p 1250 грн.
-        .tarif_item3.item
-            button(type='submit') Пополнить баланс
-        
-    section.segments
-        .segments_header
-            p Сегменты
-            a(href="#")
-                i.fa.fa-plus-circle(aria-hidden='true')
-                span Добавить сегмент
-        .segments_main
-            .segments_main_links
-                .refer: a(href="#") Операция
-                .refer: a(href="#") Тип объекта
-                .refer: a(href="#") Населённый пункт
-                .refer.area: a(href="#") Район
-            .segments_main_result
-                i.fa.fa-info-circle(aria-hidden='true')
-                span Сейчас у вас не добавлен ни один сегмент
+   
